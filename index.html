@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
-<title>世界未解之谜 · 辟谣档案馆</title>
+<title>世界未解之谜 — 辟谣档案馆</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -19,6 +19,7 @@
     --amber:#9a6a14; --amber-soft:rgba(154,106,20,.12);
     --blue:#33566e; --blue-soft:rgba(51,86,110,.10);
     --shadow:0 1px 2px rgba(60,50,20,.08),0 10px 30px -18px rgba(60,50,20,.35);
+    --fs-s:13px; --fs-m:15px; --fs-l:20px; --fs-xl:clamp(40px,7vw,72px);
     color-scheme:light;
   }
   @media (prefers-color-scheme: dark){
@@ -36,7 +37,7 @@
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;font-size:var(--fs-m);line-height:1.75;-webkit-font-smoothing:antialiased}
   .serif{font-family:"Noto Serif SC",serif}
   img{display:block;max-width:100%}
   button{font:inherit;cursor:pointer}
@@ -49,93 +50,93 @@
     radial-gradient(1100px 420px at 85% -10%,var(--amber-soft),transparent 60%),
     linear-gradient(var(--bg),var(--bg2))}
   .hero-in{padding:52px 0 40px}
-  .hero-file{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;font-size:13px;color:var(--muted);letter-spacing:.04em;border-bottom:1px dashed var(--line2);padding-bottom:14px}
+  .hero-file{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;font-size:var(--fs-s);color:var(--muted);letter-spacing:.04em;border-bottom:1px dashed var(--line2);padding-bottom:14px}
   .hero-file b{color:var(--ink2);font-weight:500}
-  .hero h1{font-family:"Noto Serif SC",serif;font-weight:900;font-size:clamp(44px,8.5vw,84px);line-height:1.12;margin:26px 0 6px;letter-spacing:.01em}
+  .hero h1{font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-xl);line-height:1.12;margin:26px 0 6px;letter-spacing:.01em}
   .hero h1 .thin{font-weight:600;color:var(--red)}
-  .hero .sub{font-family:"Noto Serif SC",serif;font-size:clamp(19px,3.4vw,27px);font-weight:600;color:var(--ink2);margin:0 0 18px}
-  .hero .lede{max-width:46em;color:var(--ink2);margin:0;font-size:16.5px}
+  .hero .sub{font-family:"Noto Serif SC",serif;font-size:var(--fs-l);font-weight:600;color:var(--ink2);margin:0 0 18px}
+  .hero .lede{max-width:46em;color:var(--ink2);margin:0;font-size:var(--fs-m)}
   .hero .lede b{color:var(--ink)}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:34px 0 6px}
   .stat{background:var(--surface);padding:16px 18px 13px}
-  .stat .n{font-family:"Noto Serif SC",serif;font-weight:900;font-size:34px;line-height:1.1}
+  .stat .n{font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-l);line-height:1.1}
   .stat .n em{font-style:normal;color:var(--red)}
-  .stat .t{font-size:13px;color:var(--muted);margin-top:2px}
+  .stat .t{font-size:var(--fs-s);color:var(--muted);margin-top:2px}
   @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
 
   /* ---------- toolbar ---------- */
-  .toolbar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .toolbar{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
   .toolbar-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 0}
   .chips{display:flex;flex-wrap:wrap;gap:8px;flex:1}
-  .chip{border:1px solid var(--line2);background:var(--surface);color:var(--ink2);border-radius:999px;padding:6px 14px;font-size:14px;line-height:1.4;transition:border-color .15s,color .15s,background .15s}
+  .chip{border:1px solid var(--line2);background:var(--surface);color:var(--ink2);border-radius:999px;padding:6px 14px;font-size:var(--fs-m);line-height:1.4;transition:border-color .15s,color .15s,background .15s}
   .chip:hover{border-color:var(--ink2)}
   .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
   .search{display:flex;align-items:center;gap:8px;border:1px solid var(--line2);background:var(--surface);border-radius:999px;padding:6px 14px;min-width:min(240px,100%)}
   .search svg{flex:none;color:var(--muted)}
-  .search input{border:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;width:100%;outline:none}
-  .count-line{font-size:13.5px;color:var(--muted);padding:14px 0 0}
+  .search input{border:0;background:transparent;color:var(--ink);font:inherit;font-size:var(--fs-m);width:100%;outline:none}
+  .count-line{font-size:var(--fs-s);color:var(--muted);padding:14px 0 0}
   .count-line b{color:var(--ink)}
 
   /* ---------- cards ---------- */
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:18px 0 8px}
   @media (max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media (max-width:600px){.grid{grid-template-columns:1fr}}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;text-align:left;padding:0;width:100%;transition:transform .18s ease,border-color .18s ease}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;text-align:left;padding:0;width:100%;transition:transform .18s ease,border-color .18s ease}
   .card:hover{transform:translateY(-3px);border-color:var(--line2)}
   .card .ph{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--surface2)}
   .card .ph img{width:100%;height:100%;object-fit:cover}
-  .card .no{position:absolute;left:10px;top:10px;background:rgba(20,18,12,.78);color:#f3ecd9;font-size:12px;letter-spacing:.08em;padding:3px 9px;border-radius:3px;font-weight:500}
-  .stamp{position:absolute;right:10px;top:10px;font-family:"Noto Serif SC",serif;font-weight:900;font-size:14px;letter-spacing:.14em;padding:4px 10px 3px;border:2px solid currentColor;border-radius:4px;transform:rotate(4deg);background:color-mix(in srgb,var(--surface) 82%,transparent)}
+  .card .no{position:absolute;left:10px;top:10px;background:rgba(20,18,12,.78);color:#f3ecd9;font-size:var(--fs-s);letter-spacing:.08em;padding:3px 9px;border-radius:3px;font-weight:500}
+  .stamp{position:absolute;right:10px;top:10px;font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-s);letter-spacing:.14em;padding:4px 10px 3px;border:2px solid currentColor;border-radius:4px;transform:rotate(4deg);background:color-mix(in srgb,var(--surface) 82%,transparent)}
   .stamp::after{content:"";position:absolute;inset:2px;border:1px solid currentColor;border-radius:2px;opacity:.55}
   .v-debunked{color:var(--red)} .v-hoax{color:var(--red)}
   .v-solved{color:var(--green)} .v-partial{color:var(--amber)} .v-open{color:var(--blue)}
   .card .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
-  .card h3{font-family:"Noto Serif SC",serif;font-weight:900;font-size:23px;line-height:1.3;margin:0}
-  .card h3 .en{display:block;font-family:"Noto Sans SC",sans-serif;font-weight:500;font-size:12.5px;color:var(--muted);letter-spacing:.06em;margin-top:3px}
+  .card .card-name{display:block;font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-l);line-height:1.3;margin:0}
+  .card .card-name .en{display:block;font-family:"Noto Sans SC",sans-serif;font-weight:500;font-size:var(--fs-s);color:var(--muted);letter-spacing:.06em;margin-top:3px}
   .meta{display:flex;flex-wrap:wrap;gap:6px}
-  .tag{font-size:12px;color:var(--ink2);border:1px solid var(--line);border-radius:3px;padding:1px 8px;background:var(--surface2)}
-  .claim{font-size:14.5px;color:var(--ink2);margin:2px 0 0}
+  .tag{font-size:var(--fs-s);color:var(--ink2);border:1px solid var(--line);border-radius:3px;padding:1px 8px;background:var(--surface2)}
+  .claim{display:block;font-size:var(--fs-m);color:var(--ink2);margin:2px 0 0}
   .claim b{color:var(--red);font-weight:700}
-  .truth{font-size:14.5px;color:var(--ink2);margin:0}
+  .truth{display:block;font-size:var(--fs-m);color:var(--ink2);margin:0}
   .truth b{color:var(--green);font-weight:700}
   @media (prefers-color-scheme: dark){.truth b{color:var(--green)}}
-  .card .foot{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:center;font-size:13.5px;color:var(--muted)}
+  .card .foot{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:center;font-size:var(--fs-s);color:var(--muted)}
   .card .foot .open{color:var(--ink);font-weight:700}
   .empty{padding:56px 0;text-align:center;color:var(--muted)}
-  .empty .big{font-family:"Noto Serif SC",serif;font-size:22px;color:var(--ink2);font-weight:700}
+  .empty .big{font-family:"Noto Serif SC",serif;font-size:var(--fs-l);color:var(--ink2);font-weight:700}
 
   /* ---------- sections ---------- */
   section.blk{padding:58px 0 8px}
   .blk-head{display:flex;align-items:baseline;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:8px}
-  .blk-head h2{font-family:"Noto Serif SC",serif;font-weight:900;font-size:clamp(26px,4.5vw,36px);margin:0;line-height:1.25}
-  .blk-head .idx{font-family:"Noto Serif SC",serif;color:var(--red);font-weight:900;font-size:18px}
-  .blk-head p{margin:0;color:var(--muted);font-size:14.5px}
+  .blk-head h2{font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-l);margin:0;line-height:1.25}
+  .blk-head .idx{font-family:"Noto Serif SC",serif;color:var(--red);font-weight:900;font-size:var(--fs-m)}
+  .blk-head p{margin:0;color:var(--muted);font-size:var(--fs-m)}
   .rows{border-bottom:1px solid var(--line)}
   .row{display:grid;grid-template-columns:64px 220px 1fr;gap:18px;padding:20px 4px;border-bottom:1px solid var(--line);align-items:start}
   .row:last-child{border-bottom:0}
-  .row .rn{font-family:"Noto Serif SC",serif;font-weight:900;font-size:30px;color:var(--red);line-height:1.2}
-  .row h3{font-family:"Noto Serif SC",serif;font-size:19px;font-weight:700;margin:0;line-height:1.45}
-  .row p{margin:0;color:var(--ink2);font-size:15px;max-width:52em}
+  .row .rn{font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-l);color:var(--red);line-height:1.2}
+  .row h3{font-family:"Noto Serif SC",serif;font-size:var(--fs-l);font-weight:700;margin:0;line-height:1.45}
+  .row p{margin:0;color:var(--ink2);font-size:var(--fs-m);max-width:52em}
   @media (max-width:700px){.row{grid-template-columns:44px 1fr}.row p{grid-column:2}}
 
   .why{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
   .why div{padding:18px 0;border-bottom:1px solid var(--line)}
-  .why h3{font-family:"Noto Serif SC",serif;font-size:18.5px;margin:0 0 6px;font-weight:700}
+  .why h3{font-family:"Noto Serif SC",serif;font-size:var(--fs-l);margin:0 0 6px;font-weight:700}
   .why h3 span{color:var(--red);margin-right:8px}
-  .why p{margin:0;color:var(--ink2);font-size:15px}
+  .why p{margin:0;color:var(--ink2);font-size:var(--fs-m)}
   @media (max-width:700px){.why{grid-template-columns:1fr}}
 
   .timeline{margin-top:10px;border-left:2px solid var(--line2);padding-left:26px;display:flex;flex-direction:column;gap:0}
   .tl{position:relative;padding:13px 0}
   .tl::before{content:"";position:absolute;left:-33px;top:24px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--red)}
-  .tl .y{font-family:"Noto Serif SC",serif;font-weight:900;font-size:19px}
-  .tl p{margin:2px 0 0;color:var(--ink2);font-size:15px;max-width:52em}
+  .tl .y{font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-l)}
+  .tl p{margin:2px 0 0;color:var(--ink2);font-size:var(--fs-m);max-width:52em}
   .tl p b{color:var(--ink)}
 
-  footer{margin-top:64px;border-top:2px solid var(--ink);padding:28px 0 46px;color:var(--muted);font-size:13.5px}
+  footer{margin-top:64px;border-top:2px solid var(--ink);padding:28px 0 46px;color:var(--muted);font-size:var(--fs-s)}
   footer .cols{display:grid;grid-template-columns:1.3fr 1fr;gap:28px}
   @media (max-width:700px){footer .cols{grid-template-columns:1fr}}
-  footer h4{font-family:"Noto Serif SC",serif;color:var(--ink);font-size:15px;margin:0 0 8px}
+  footer h4{font-family:"Noto Serif SC",serif;color:var(--ink);font-size:var(--fs-m);margin:0 0 8px}
   footer p{margin:0 0 8px}
   footer ul{margin:0;padding-left:18px}
 
@@ -146,115 +147,105 @@
   @media (min-width:700px){.scrim{align-items:center;padding:24px}.sheet{border-radius:10px}}
   .sheet .ph{position:relative;aspect-ratio:16/8;overflow:hidden}
   .sheet .ph img{width:100%;height:100%;object-fit:cover}
-  .sheet .x{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(20,18,12,.8);color:#f3ecd9;font-size:19px;line-height:1;display:flex;align-items:center;justify-content:center}
+  .sheet .x{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(20,18,12,.8);color:#f3ecd9;font-size:var(--fs-m);line-height:1;display:flex;align-items:center;justify-content:center}
   .sheet .bd{padding:24px 28px 34px}
   @media (max-width:600px){.sheet .bd{padding:20px 18px 30px}}
-  .sheet h3{font-family:"Noto Serif SC",serif;font-weight:900;font-size:30px;line-height:1.3;margin:0 0 4px;padding-right:90px}
-  .sheet .en{color:var(--muted);font-size:13px;letter-spacing:.05em}
+  .sheet h3{font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-l);line-height:1.3;margin:0 0 4px;padding-right:90px}
+  .sheet .en{color:var(--muted);font-size:var(--fs-s);letter-spacing:.05em}
   .verdict-line{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 4px}
-  .stamp2{position:relative;font-family:"Noto Serif SC",serif;font-weight:900;letter-spacing:.14em;padding:5px 12px 4px;border:2.5px solid currentColor;border-radius:4px;transform:rotate(-2.5deg);font-size:16px}
-  .sheet h5{font-family:"Noto Serif SC",serif;font-size:17px;font-weight:700;margin:24px 0 6px;display:flex;align-items:center;gap:10px}
+  .stamp2{position:relative;font-family:"Noto Serif SC",serif;font-weight:900;letter-spacing:.14em;padding:5px 12px 4px;border:2.5px solid currentColor;border-radius:4px;transform:rotate(-2.5deg);font-size:var(--fs-m)}
+  .sheet h5{font-family:"Noto Serif SC",serif;font-size:var(--fs-m);font-weight:700;margin:24px 0 6px;display:flex;align-items:center;gap:10px}
   .sheet h5::after{content:"";flex:1;border-top:1px dashed var(--line2)}
-  .sheet p{margin:0 0 10px;color:var(--ink2);font-size:15.5px}
-  .sheet ul{margin:0 0 6px;padding-left:20px;color:var(--ink2);font-size:15.5px}
+  .sheet p{margin:0 0 10px;color:var(--ink2);font-size:var(--fs-m)}
+  .sheet ul{margin:0 0 6px;padding-left:20px;color:var(--ink2);font-size:var(--fs-m)}
   .sheet li{margin-bottom:7px}
   .sheet li b,.sheet p b{color:var(--ink)}
-  .turn{background:var(--amber-soft);border:1px solid var(--line);border-radius:6px;padding:13px 16px;font-size:15px;color:var(--ink2)}
+  .turn{background:var(--amber-soft);border:1px solid var(--line);border-radius:6px;padding:13px 16px;font-size:var(--fs-m);color:var(--ink2)}
   .turn b{color:var(--ink)}
-  .note{font-size:13.5px;color:var(--muted)}
+  .note{font-size:var(--fs-s);color:var(--muted)}
 
   /* ---------- mobile layout ---------- */
   @media (max-width:700px){
     .wrap{padding:0 16px}
     /* hero */
     .hero-in{padding:34px 0 28px}
-    .hero-file{font-size:12px;gap:5px 14px;padding-bottom:11px}
-    .hero h1{font-size:clamp(38px,11.5vw,44px);margin:20px 0 4px}
-    .hero .sub{font-size:18px;margin-bottom:14px}
-    .hero .lede{font-size:15.5px;line-height:1.8}
+    .hero-file{font-size:var(--fs-s);gap:5px 14px;padding-bottom:11px}
+    .hero h1{margin:20px 0 4px}
+    .hero .sub{margin-bottom:14px}
+    .hero .lede{line-height:1.8}
     .stats{margin:26px 0 2px}
     .stat{padding:13px 14px 11px}
-    .stat .n{font-size:27px}
-    .stat .t{font-size:12.5px}
     /* toolbar: search takes its own full-width row, chips wrap compactly below */
     .toolbar-in{gap:8px;padding:10px 0}
     .search{order:-1;flex:1 1 100%;padding:8px 14px}
-    .search input{font-size:15px}
+    .search input{font-size:var(--fs-m)}
     .chips{gap:6px}
-    .chip{padding:6px 12px;font-size:13px;min-height:34px}
+    .chip{padding:6px 12px;min-height:34px}
     .count-line{padding-top:10px}
     /* cards */
     .grid{gap:16px;padding-top:14px}
     .card .bd{padding:16px 16px 18px}
-    .card h3{font-size:21px}
     .card .foot{flex-wrap:wrap;gap:3px 12px}
     /* sections */
     section.blk{padding:42px 0 4px}
     .blk-head{flex-wrap:wrap;gap:4px 12px;padding-bottom:8px}
-    .blk-head h2{font-size:24px}
-    .blk-head .idx{font-size:16px}
-    .blk-head p{flex-basis:100%;font-size:13.5px}
+    .blk-head p{flex-basis:100%;font-size:var(--fs-s)}
     .row{gap:12px;padding:16px 2px}
-    .row .rn{font-size:25px}
-    .row h3{font-size:17.5px}
     .why div{padding:15px 0}
     /* timeline: tighter rail so text gets the width */
     .timeline{padding-left:20px}
     .tl{padding:11px 0}
     .tl::before{left:-27.5px;top:22px}
-    .tl .y{font-size:18px}
     footer{margin-top:48px;padding:24px 0 calc(34px + env(safe-area-inset-bottom))}
     /* sheet */
     .sheet .ph{aspect-ratio:16/9}
     .sheet .bd{padding:20px 18px calc(28px + env(safe-area-inset-bottom))}
-    .sheet h3{font-size:25px;padding-right:0}
+    .sheet h3{padding-right:0}
     .sheet .x{width:40px;height:40px}
-    .stamp2{font-size:15px}
+    .stamp2{font-size:var(--fs-m)}
   }
   @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
   /* ---------- share pages ---------- */
-  .share-intro{max-width:46em;color:var(--ink2);font-size:15.5px;margin:14px 0 22px}
+  .share-intro{max-width:46em;color:var(--ink2);font-size:var(--fs-m);margin:14px 0 22px}
   .pager{max-width:600px;margin:0 auto}
-  .page-card{background:var(--surface);border:2px solid var(--ink);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);text-align:left}
-  .pc-top{display:flex;justify-content:space-between;gap:12px;padding:10px 18px;border-bottom:1px dashed var(--line2);font-size:12.5px;letter-spacing:.08em;color:var(--muted)}
+  .page-card{background:var(--surface);border:2px solid var(--ink);border-radius:8px;overflow:hidden;text-align:left}
+  .pc-top{display:flex;justify-content:space-between;gap:12px;padding:10px 18px;border-bottom:1px dashed var(--line2);font-size:var(--fs-s);letter-spacing:.08em;color:var(--muted)}
   .pc-top b{color:var(--ink2);font-weight:700}
   .pc-img{width:100%;aspect-ratio:3/2;object-fit:cover}
   .pc-body{padding:20px 22px 18px}
   .pc-name{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:8px 14px}
-  .pc-name h3{font-family:"Noto Serif SC",serif;font-weight:900;font-size:27px;line-height:1.3;margin:0}
+  .pc-name h3{font-family:"Noto Serif SC",serif;font-weight:900;font-size:var(--fs-l);line-height:1.3;margin:0}
   .pc-name .stamp{position:static;flex:none;margin-top:4px}
   .pc-block{margin-top:16px}
-  .pc-k{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.1em;padding:2px 9px;border-radius:3px;margin-bottom:6px}
+  .pc-k{display:inline-block;font-size:var(--fs-s);font-weight:700;letter-spacing:.1em;padding:2px 9px;border-radius:3px;margin-bottom:6px}
   .pc-k.k-claim{background:var(--red-soft);color:var(--red)}
   .pc-k.k-say{background:var(--green-soft);color:var(--green)}
-  .pc-block p{margin:0;font-size:16px;color:var(--ink2)}
-  .pc-block.say p{font-size:17.5px;color:var(--ink);line-height:1.8}
+  .pc-block p{margin:0;font-size:var(--fs-m);color:var(--ink2)}
+  .pc-block.say p{font-size:var(--fs-m);color:var(--ink);line-height:1.8}
   .pc-ev{margin:18px 0 0}
   .pc-ev img{width:100%;border:1px solid var(--line2);border-radius:6px}
-  .pc-ev figcaption{font-size:13.5px;color:var(--muted);margin-top:7px;line-height:1.65}
+  .pc-ev figcaption{font-size:var(--fs-s);color:var(--muted);margin-top:7px;line-height:1.65}
   .pc-ev figcaption b{color:var(--red);font-weight:700}
-  .pc-foot{margin-top:18px;padding-top:11px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted);letter-spacing:.05em;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .pc-foot{margin-top:18px;padding-top:11px;border-top:1px dashed var(--line);font-size:var(--fs-s);color:var(--muted);letter-spacing:.05em;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
   .pager-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-top:18px}
-  .pbtn{border:1px solid var(--line2);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 20px;font-size:15px;font-weight:700;transition:border-color .15s,background .15s}
+  .pbtn{border:1px solid var(--line2);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 20px;font-size:var(--fs-m);font-weight:700;transition:border-color .15s,background .15s}
   .pbtn:hover:not(:disabled){border-color:var(--ink)}
   .pbtn:disabled{opacity:.35;cursor:default}
   .pbtn.ghost{font-weight:500;color:var(--ink2)}
-  .pg-count{font-size:14px;color:var(--muted);min-width:86px;text-align:center}
+  .pg-count{font-size:var(--fs-s);color:var(--muted);min-width:86px;text-align:center}
   .all-pages{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px}
   .all-pages .page-card{cursor:pointer}
   @media (max-width:760px){.all-pages{grid-template-columns:1fr}}
   @media (max-width:700px){
     .pc-body{padding:17px 16px 15px}
-    .pc-name h3{font-size:23px}
-    .pc-block.say p{font-size:16.5px}
     .pager-bar{gap:8px}
-    .pbtn{padding:9px 16px;font-size:14.5px}
+    .pbtn{padding:9px 16px}
   }
   /* evidence photo inside the archive sheet */
   .evfig{margin:0}
   .evfig img{width:100%;border:1px solid var(--line2);border-radius:6px}
-  .evfig figcaption{font-size:13.5px;color:var(--muted);margin-top:7px;line-height:1.65}
+  .evfig figcaption{font-size:var(--fs-s);color:var(--muted);margin-top:7px;line-height:1.65}
   @media print{
     .toolbar,.pager,.hero .stats{display:none!important}
     #allPages{display:grid!important}
@@ -270,7 +261,7 @@
   <div class="wrap hero-in">
     <div class="hero-file">
       <span>档案编号 <b>NO.1990-S</b></span>
-      <span>来源 <b>书摊 · 电视 · 少年杂志</b></span>
+      <span>来源 <b>书摊、电视、少年杂志</b></span>
       <span>状态 <b>重新开封，逐条核对</b></span>
     </div>
     <h1>世界未解之谜<span class="thin">，</span><br />后来呢？</h1>
@@ -312,7 +303,7 @@
   </div>
 
   <section class="blk share-blk" id="shareSec" aria-labelledby="tShare">
-    <div class="blk-head"><span class="idx">分享版</span><h2 id="tShare">一页一个谜，截图就能发</h2><p>全说人话 · 有实锤的配证据照片</p></div>
+    <div class="blk-head"><span class="idx">分享版</span><h2 id="tShare">一页一个谜，截图就能发</h2><p>全说人话，有实锤的配证据照片</p></div>
     <p class="share-intro">这一套是专门为转发排的：一页只讲一个谜——先是小时候听到的那个说法，然后一句人话讲清真相，有实锤照片的都配上了。翻到想发的那一页，截图发给朋友就行；也可以展开全部 20 页，一页一页慢慢挑。</p>
     <div class="pager">
       <div class="page-card" id="pageCard"></div>
@@ -488,7 +479,7 @@ var DATA = [
   claim:"布上的人影是耶稣的遗容，颜料画不出、仪器测不准，成像原理至今不明。",
   truth:"1988 年三家顶级实验室独立碳测年：布料来自 1260 – 1390 年的中世纪。",
   story:"这块 4.4 米长的亚麻布保存在都灵大教堂，布上有隐约的男子正面与背面影像，14 世纪起在法国有明确展出记录。未解之谜读物的写法是：画家画不出这种负片影像、布上还有花粉和血迹——难道它真是圣物？这个谜的特殊之处在于，教会方面最终允许了科学取样。",
-  facts:["<b>1988 年</b>，牛津大学、亚利桑那大学、苏黎世联邦理工三家实验室对同批样本独立进行放射性碳测年，结果一致：布料年代为<b>公元 1260 – 1390 年</b>（95% 置信区间），成果发表于 1989 年《自然》。","这个年代与裹尸布第一次见诸文字记录的 1350 年代严丝合缝——那正是它「出道」的年份。","更早的旁证：1357 年前后，当地主教曾报告画家承认此布为绘制而成，该记录保存在教会档案中。","此后关于「取样位置是修补区」的质疑持续了三十年，但修补说本身从未拿出可复核的化学证据推翻三家实验室的原始数据；主流科学界的结论至今未变。至于影像如何形成，仍有争论——但那已经是「中世纪工艺之谜」，不是「圣物之谜」。"],
+  facts:["<b>1988 年</b>，牛津大学、亚利桑那大学、苏黎世联邦理工三家实验室对同批样本独立进行放射性碳测年，结果一致：布料年代为<b>公元 1260 – 1390 年</b>（95% 置信区间），成果发表于 1989 年《自然》。","这个年代与裹尸布第一次见诸文字记录的 1350 年代严丝合缝——那正是它「出道」的年份。","更早的旁证：1389 年，特鲁瓦主教达尔西斯致教皇的备忘录中写道，前任主教调查时画家已承认此布为绘制而成；该备忘录至今保存在教会档案中。","此后关于「取样位置是修补区」的质疑持续了三十年，但修补说本身从未拿出可复核的化学证据推翻三家实验室的原始数据；主流科学界的结论至今未变。至于影像如何形成，仍有争论——但那已经是「中世纪工艺之谜」，不是「圣物之谜」。"],
   turn:"三家实验室、三份盲样、同一个答案。<b>这是本档案里证据规格最高的一次证伪</b>，也是科学方法最漂亮的一次登场。",
   last:"给当年的自己：允许取样检测的传说最值得尊敬——查清了，也体面。"
 },
@@ -497,7 +488,7 @@ var DATA = [
   claim:"深山里生活着直立行走的野人，脚印、毛发、目击报告成千上万，就是抓不到。",
   truth:"找了半个多世纪：毛发 DNA 多为熊、牛等已知动物；活体、尸体、化石——一样都没有。",
   story:"中国的神农架野人和北美的大脚怪是同一种传说的一体两面。1970 年代神农架多次组织大规模考察，电视台、报纸连篇累牍；1993 年还有「专家组宣布发现野人毛发有别于已知动物」的轰动新闻。北美那边，1967 年帕特森拍摄的「大脚怪回头」影像，至今仍是未解之谜读物的镇馆之宝。",
-  facts:["几十年间收集的「野人毛发」送检结果高度一致：多为<b>熊、麂、家畜乃至人类</b>的毛发。1993 年那批「特殊毛发」此后未见任何同行复核的正式论文。","<b>2014 年</b>，牛津大学团队对全球 57 份「类人猿神秘生物」毛发样本做 DNA 测序并发表：全部对应已知物种，其中两份来自亚洲的样本匹配到一种古代极地熊的后代——是熊，不是野人。","大型陆生动物必然留下可验证的种群痕迹：尸体、骨骼、化石、稳定的食物链位置。半个多世纪、数以万计的红外相机和全民手机时代，北美与神农架<b>零</b>实物记录。","帕特森影像从未被原作者承认造假，但服装道具师的证词、拍摄者的财务动机与影像中「毛皮拉链」般的细节，使其在学术界不被采信为证据。"],
+  facts:["几十年间收集的「野人毛发」送检结果高度一致：多为<b>熊、麂、家畜乃至人类</b>的毛发。1993 年那批「特殊毛发」此后未见任何同行复核的正式论文。","<b>2014 年</b>，牛津大学团队对全球征集的 57 份「类人猿神秘生物」毛发样本做 DNA 测序：37 份进入基因分析、30 份测出序列，全部对应已知物种，其中两份来自亚洲的样本匹配到一种古代北极熊的后代——是熊，不是野人。","大型陆生动物必然留下可验证的种群痕迹：尸体、骨骼、化石、稳定的食物链位置。半个多世纪、数以万计的红外相机和全民手机时代，北美与神农架<b>零</b>实物记录。","帕特森影像从未被原作者承认造假，但服装道具师的证词、拍摄者的财务动机与影像中「毛皮拉链」般的细节，使其在学术界不被采信为证据。"],
   turn:"这个谜至今没有「终审判决」，所以它留在「尚无实证」一栏——<b>举证责任在主张存在的一方</b>，而这一方七十年没交出过一份合格的证据。",
   last:"给当年的自己：目击报告一万份，不如一根能复检的骨头。这句话适用于所有谜团。"
 },
@@ -556,7 +547,7 @@ var DATA = [
   last:"给当年的自己：福尔摩斯之父写的「纪实」，首先是文学，其次才是资料。"
 },
 { id:"tianqi", name:"天启大爆炸", en:"THE TIANQI EXPLOSION", img:"assets/beijing.jpg", alt:"北京紫禁城午门与宫殿群",
-  verdict:"partial", cat:"自然事件", era:"1626 年 · 与通古斯并称",
+  verdict:"partial", cat:"自然事件", era:"1626 年，与通古斯并称",
   claim:"1626 年北京一声巨响，火光冲天，死者的衣服全被剥光——与通古斯并称世界未解自然之谜。",
   truth:"爆炸的中心是明朝的火药库王恭厂。火药库在居民区里炸了，惨烈有据可查；只有少数细节至今仍在争论。",
   story:"明熹宗天启六年（1626 年）五月初六，北京城西南的王恭厂一带发生剧烈爆炸，奏报称波及数里、死伤以万计。奏报与笔记里留下了「脱衣」「五千斤石狮飞出城门」等骇人细节。20 世纪的未解之谜读物把它与通古斯大爆炸等并称「世界三大自然之谜」，暗示天外来客或未知能量。",
@@ -608,15 +599,15 @@ function render(){
       + '<span class="no">档案 ' + String(DATA.indexOf(d)+1).padStart(2,'0') + '</span>'
       + '<span class="stamp ' + v.cls + '">' + v.label + '</span></span>'
       + '<span class="bd">'
-      + '<h3>' + d.name + '<span class="en">' + d.en + '</span></h3>'
+      + '<span class="card-name">' + d.name + '<span class="en">' + d.en + '</span></span>'
       + '<span class="meta"><span class="tag">' + d.cat + '</span><span class="tag">' + d.era + '</span></span>'
-      + '<p class="claim"><b>当年说：</b>' + d.claim + '</p>'
-      + '<p class="truth"><b>后来查清：</b>' + d.truth + '</p>'
-      + '<span class="foot"><span>证据 ' + d.facts.length + ' 条 · 关键转折 1 次</span><span class="open">打开档案 →</span></span>'
+      + '<span class="claim"><b>当年说：</b>' + d.claim + '</span>'
+      + '<span class="truth"><b>后来查清：</b>' + d.truth + '</span>'
+      + '<span class="foot"><span>证据 ' + d.facts.length + ' 条，关键转折 1 次</span><span class="open">打开档案 →</span></span>'
       + '</span></button>';
   }).join('');
   empty.hidden = list.length > 0;
-  countLine.innerHTML = '档案柜中共 <b>' + list.length + '</b> 份' + (currentFilter!=='all' ? ' · 结论：' + VERDICTS[currentFilter].label : '') + (q ? ' · 含「' + esc(q) + '」' : '');
+  countLine.innerHTML = '档案柜中共 <b>' + list.length + '</b> 份' + (currentFilter!=='all' ? '，结论：' + VERDICTS[currentFilter].label : '') + (q ? '，含「' + esc(q) + '」' : '');
   var btns = grid.querySelectorAll('[data-open]');
   for (var i=0;i<btns.length;i++){ btns[i].addEventListener('click', function(){ openSheet(this.getAttribute('data-open')); }); }
 }
@@ -631,9 +622,9 @@ function openSheet(id){
       '<div class="ph"><img src="' + d.img + '" alt="' + esc(d.alt) + '" />'
     + '<button class="x" id="sheetX" aria-label="关闭档案">✕</button></div>'
     + '<div class="bd">'
-    + '<div class="en">档案 ' + String(DATA.indexOf(d)+1).padStart(2,'0') + ' · ' + d.en + '</div>'
+    + '<div class="en">档案 ' + String(DATA.indexOf(d)+1).padStart(2,'0') + ' — ' + d.en + '</div>'
     + '<h3 id="sheetTitle">' + d.name + '</h3>'
-    + '<div class="verdict-line"><span class="stamp2 ' + v.cls + '">' + v.label + '</span><span class="note">' + d.cat + ' · ' + d.era + '</span></div>'
+    + '<div class="verdict-line"><span class="stamp2 ' + v.cls + '">' + v.label + '</span><span class="note">' + d.cat + '，' + d.era + '</span></div>'
     + '<h5>当年是怎么传的</h5><p>' + d.story + '</p>'
     + '<h5>后来查清了什么</h5><ul>' + d.facts.map(function(f){ return '<li>' + f + '</li>'; }).join('') + '</ul>'
     + evBlock(d)
@@ -653,7 +644,7 @@ function closeSheet(){
 scrim.addEventListener('click', function(e){ if (e.target === scrim) closeSheet(); });
 document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && scrim.classList.contains('on')) closeSheet(); });
 
-var chips = document.querySelectorAll('.chip');
+var chips = document.querySelectorAll('.chip[data-f]');
 for (var c=0;c<chips.length;c++){
   chips[c].addEventListener('click', function(){
     for (var j=0;j<chips.length;j++) chips[j].setAttribute('aria-pressed','false');
@@ -670,34 +661,34 @@ var SHARE = {
   bermuda:{say:"说白了：那片海船多、飞机多、风暴也多，出事的总数看着吓人，可一平均，跟别的繁忙海域没区别。保险公司都不肯给它单独涨价——真危险，他们第一个不答应。"},
   lochness:{say:"说白了：最有名的那张水怪照片，是几个人拿玩具潜艇绑了个木头脑袋拍的，骗了全世界 60 年。后来把整个湖的水都验了一遍 DNA，大怪物没有，只有鳗鱼——还特别多。",
     evImg:"assets/ev-nessie.jpg", evAlt:"1934 年尼斯湖外科医生照片",
-    evCap:"<b>证据照片 · </b>就是这张骗了世界 60 年的「外科医生照片」。1994 年，制作者临终承认：那个长脖子，是玩具潜艇上绑的木雕头。"},
+    evCap:"<b>证据照片：</b>就是这张骗了世界 60 年的「外科医生照片」。1994 年，制作者临终承认：那个长脖子，是玩具潜艇上绑的木雕头。"},
   cropcircle:{say:"说白了：两个英国老头晚上睡不着，拿块木板踩出来的，后来还当着记者的面又踩了一个。全部工具：一块板、一根绳，没了。",
     evImg:"assets/ev-crop2.jpg", evAlt:"麦田怪圈作者鲍尔与乔利和他们的压圈木板",
-    evCap:"<b>证据照片 · </b>蹲在麦田里的就是两位作者，手边那块带绳子的木板就是全部「外星科技」。1991 年，他俩当着报社记者的面，一夜又压出一个一模一样的圈。"},
+    evCap:"<b>证据照片：</b>蹲在麦田里的就是两位作者，手边那块带绳子的木板就是全部「外星科技」。1991 年，他俩当着报社记者的面，一夜又压出一个一模一样的圈。"},
   pyramid:{say:"说白了：埃及工人自己建的，有工资、有食堂、顿顿吃牛肉，还有个监工把每天运石头的流水账写下来，留到了今天。说外星人建的，纯粹是小瞧古人。",
     evImg:"assets/ev-pyramid.jpg", evAlt:"梅勒日记莎草纸残片",
-    evCap:"<b>证据照片 · </b>这就是监工梅勒 4600 年前亲手写的日记莎草纸：哪天、运了多少石头、到没到工地，记得清清楚楚。有台账在，谁建的就不用猜了。"},
+    evCap:"<b>证据照片：</b>这就是监工梅勒 4600 年前亲手写的日记莎草纸：哪天、运了多少石头、到没到工地，记得清清楚楚。有台账在，谁建的就不用猜了。"},
   moai:{say:"说白了：石像不是只有个头，地底下埋着完整的身子，最长 7 米。运的时候拿绳子左右晃着让它「走」过去——科学家照着做，真让它走起来了。",
     evImg:"assets/ev-moai.jpg", evAlt:"发掘中的摩艾石像，露出埋在地下的身体",
-    evCap:"<b>证据照片 · </b>考古队把石像周围的土挖开，「大头」下面是完整的身子。传了一百年的神秘，一半是只拍了半截照片闹的。"},
+    evCap:"<b>证据照片：</b>考古队把石像周围的土挖开，「大头」下面是完整的身子。传了一百年的神秘，一半是只拍了半截照片闹的。"},
   stonehenge:{say:"说白了：每块石头打哪儿来，都查得一清二楚，最远一块从苏格兰运了 750 公里。几代人接力干了几百年，慢工出细活，没啥超自然的。"},
   tunguska:{say:"说白了：一块大石头飞进大气层，还没落地就在半空中炸了。找不到坑，是因为它压根没落地——爆炸正下方的树还直直站着，这就是空爆留下的签名。"},
   atlantis:{say:"说白了：这是柏拉图编的一个寓言故事，借沉没的岛国劝人别骄傲。两千多年了，海底都测绘遍了，一块砖都没找着——它本来就只活在书里。"},
   crystalskull:{say:"说白了：拿显微镜一看，全是 19 世纪机器砂轮划的印子。就是德国作坊里做出来的工艺品，被古董商编了个玛雅出身，卖出了天价。"},
   shroud:{say:"说白了：三家全世界最顶尖的实验室一起测的，这块布是 1300 年前后织的，中世纪的产品。至于是哪位画家画的，那是另一个问题了。",
     evImg:"assets/ev-shroud.jpg", evAlt:"都灵裹尸布上的面部影像（底片效果）",
-    evCap:"<b>证据照片 · </b>裹尸布上的人脸（底片效果）。这块布真正的判决书不在照片里，在 1988 年三家实验室的碳测年报告里：年代是中世纪，晚了一千多年。"},
+    evCap:"<b>证据照片：</b>裹尸布上的人脸（底片效果）。这块布真正的判决书不在照片里，在 1988 年三家实验室的碳测年报告里：年代是中世纪，晚了一千多年。"},
   bigfoot:{say:"说白了：找了快 70 年，毛发送检了一堆，不是熊就是牛；活体、尸体、骨头，一样都没有。这年头人人兜里都有手机，它还能躲哪儿去？"},
   roswell:{say:"说白了：掉下来的确实是军方的秘密东西——监听苏联核试验的气球。军方撒谎是为了给项目保密，民间就脑补成了外星人。谎是真的，飞碟是假的。",
     evImg:"assets/ev-roswell.jpg", evAlt:"1947 年沃斯堡基地展示的气球残骸照片",
-    evCap:"<b>证据照片 · </b>1947 年沃斯堡基地的官方照片：军官手里拎的「飞碟残骸」，就是气象气球的锡箔纸和木条。照片当年就发了，只是没人愿意信这么朴素的答案。"},
+    evCap:"<b>证据照片：</b>1947 年沃斯堡基地的官方照片：军官手里拎的「飞碟残骸」，就是气象气球的锡箔纸和木条。照片当年就发了，只是没人愿意信这么朴素的答案。"},
   pharaoh:{say:"说白了：把进过墓的人挨个查了一遍，寿命跟普通人一模一样。出钱的勋爵是剃胡子划破脸、伤口感染死的——这运气，跟诅咒没关系。墓里根本没有什么诅咒铭文，那是报纸编的。"},
   maya2012:{say:"说白了：玛雅历法就是一本超长的日历，2012 年 12 月 21 日是这一本翻到头了，跟咱们年底换新挂历一个道理。人家玛雅人自己还刻了几千年后的日期——压根没想过那天是终点。",
     evImg:"assets/ev-maya.jpg", evAlt:"阿兹特克太阳石（常被误传为玛雅历法石）",
-    evCap:"<b>证据照片 · </b>当年人手一张的「玛雅历法石」照片，其实是阿兹特克人的太阳石，跟玛雅、跟 2012 都不沾边——这场谣言，连主角都认错了。"},
+    evCap:"<b>证据照片：</b>当年人手一张的「玛雅历法石」照片，其实是阿兹特克人的太阳石，跟玛雅、跟 2012 都不沾边——这场谣言，连主角都认错了。"},
   moonhoax:{say:"说白了：登月舱的残骸现在还在月亮上，后来的探测器拍得清清楚楚；宇航员留下的反光镜，地球上天天有人拿激光照它测距离。真要造这个假，成本比真登月还高。",
     evImg:"assets/ev-lro.jpg", evAlt:"月球勘测轨道飞行器拍下的阿波罗 11 号着陆点",
-    evCap:"<b>证据照片 · </b>探测器从月球轨道拍下的阿波罗 11 号着陆点：登月舱下降级、电视摄像机、激光反射器全在，连宇航员走出来的小路都看得见。摄影棚里，可拍不出这个。"},
+    evCap:"<b>证据照片：</b>探测器从月球轨道拍下的阿波罗 11 号着陆点：登月舱下降级、电视摄像机、激光反射器全在，连宇航员走出来的小路都看得见。摄影棚里，可拍不出这个。"},
   philadelphia:{say:"说白了：整个故事是一个人 1955 年写信编出来的，说法还前后对不上。那艘船的航海日志写得明明白白：传说中的那几天，它根本不在费城。就靠一个人的几封信，骗了半个世纪。"},
   maryceleste:{say:"说白了：船上没鬼。最靠谱的解释是：货舱里酒精味太重、还轰地响了一声，船长怕船要炸，带全船人上小船躲一躲，结果绳子断了，大船自己漂走了，人再也没能回去。至于「早餐还热着」，是小说家添的油。"},
   tianqi:{say:"说白了：炸的就是朝廷自家的火药库。火药库建在居民区里，一炸就是惨案；古代奏报写得又急又乱，越传越玄。细节还有争论，但什么外星人、神秘能量，一点实物证据都没有。"},
@@ -715,7 +706,7 @@ function pageHTML(d, i){
   var v = VERDICTS[d.verdict];
   var s = SHARE[d.id] || {};
   var ev = s.evImg ? '<figure class="pc-ev"><img src="' + s.evImg + '" alt="' + esc(s.evAlt || '') + '" loading="lazy" /><figcaption>' + s.evCap + '</figcaption></figure>' : '';
-  return '<div class="pc-top"><span><b>世界未解之谜</b> · 辟谣档案</span><span>第 ' + (i+1) + ' / ' + DATA.length + ' 页</span></div>'
+  return '<div class="pc-top"><span><b>世界未解之谜</b>辟谣档案</span><span>第 ' + (i+1) + ' / ' + DATA.length + ' 页</span></div>'
     + '<img class="pc-img" src="' + d.img + '" alt="' + esc(d.alt) + '" loading="lazy" />'
     + '<div class="pc-body">'
     + '<div class="pc-name"><h3>' + d.name + '</h3><span class="stamp ' + v.cls + '">' + v.label + '</span></div>'
