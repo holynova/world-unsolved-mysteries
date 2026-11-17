@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="360" viewBox="0 0 1200 360"
+     role="img" aria-labelledby="title desc">
+  <title id="title">世界未解之谜 — 80/90 后童年谜题的辟谣档案馆</title>
+  <desc id="desc">暖纸底标题：世界未解之谜，后来呢？右侧是一份档案卡，档案 01 百慕大三角，盖着红色的已辟谣印章，下方是五种结论的统计。</desc>
+
+  <rect width="1200" height="360" rx="26" fill="#f5efdf"/>
+
+  <g id="title-block" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="56" y="62" font-size="19" letter-spacing="3" fill="#6f6152">辟谣档案馆 · MYTH-BUSTING ARCHIVE</text>
+    <text x="56" y="128" font-size="58" font-weight="700" fill="#2b2620">世界未解之谜，后来呢？</text>
+    <text x="56" y="168" font-size="23" fill="#2b2620">80 后、90 后童年谜团的辟谣档案馆</text>
+    <text x="56" y="204" font-size="19" fill="#6d6257">传说 — 证据 — 结论，每个谜团逐个开封、逐条核对。</text>
+    <g id="chips" font-size="18" fill="#2b2620" text-anchor="middle">
+      <g><rect x="56" y="238" width="126" height="36" rx="18" fill="#ffffff" stroke="#d8d0bf" stroke-width="1.5"/><text x="119" y="262">20 个案例</text></g>
+      <g><rect x="194" y="238" width="162" height="36" rx="18" fill="#ffffff" stroke="#d8d0bf" stroke-width="1.5"/><text x="275" y="262">19 / 20 已查清</text></g>
+      <g><rect x="368" y="238" width="150" height="36" rx="18" fill="#ffffff" stroke="#d8d0bf" stroke-width="1.5"/><text x="443" y="262">4 起造假实锤</text></g>
+      <g><rect x="530" y="238" width="150" height="36" rx="18" fill="#ffffff" stroke="#d8d0bf" stroke-width="1.5"/><text x="605" y="262">8 张证据照片</text></g>
+    </g>
+  </g>
+
+  <g id="case-file" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <rect x="800" y="48" width="340" height="264" rx="8" fill="#fffdf6" stroke="#d8d0bf" stroke-width="1.5"/>
+    <text x="828" y="92" font-size="16" letter-spacing="2" fill="#6f6152">档案 01 · THE BERMUDA TRIANGLE</text>
+    <text x="828" y="132" font-size="30" font-weight="700" fill="#2b2620">百慕大三角</text>
+    <text x="828" y="162" font-size="17" fill="#6d6257">海域传说 · 1974 年成书后风靡全球</text>
+    <g transform="rotate(-8 1055 130)">
+      <rect x="1005" y="106" width="104" height="44" rx="6" fill="none" stroke="#b3402a" stroke-width="3"/>
+      <text x="1057" y="137" font-size="24" font-weight="700" fill="#b3402a" text-anchor="middle">已辟谣</text>
+    </g>
+    <line x1="828" y1="182" x2="1112" y2="182" stroke="#e8dcc8" stroke-width="1"/>
+    <text x="828" y="208" font-size="17" fill="#2b2620">当年说：飞机轮船一进这片海就凭空消失。</text>
+    <text x="828" y="234" font-size="17" fill="#2b2620">后来查清：事故率并不比其他繁忙海域高。</text>
+    <line x1="828" y1="252" x2="1112" y2="252" stroke="#e8dcc8" stroke-width="1"/>
+    <g font-size="16" fill="#2b2620">
+      <text x="828" y="282">已辟谣 7 · 造假实锤 4 · 已破解 2</text>
+      <text x="828" y="306" fill="#6d6257">部分破解 6 · 尚无实证 1</text>
+    </g>
+  </g>
+</svg>
